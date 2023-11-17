@@ -1,6 +1,9 @@
+import ThemeBtn from "./ThemeBtn";
+
 export default function Card() {
     return (
         <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-white-500">
+       
             <a href="/" onClick={
                 (e)=>{
                     e.preventDefault();
@@ -9,7 +12,7 @@ export default function Card() {
                 <img className="p-8 rounded-t-lg" src="https://images.unsplash.com/photo-1675516490928-e8fdfdf65ca8?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="product_image1" />
             </a>
             <div className="px-5 pb-5">
-                <a href="/">
+                <a href="/" onClick={(e)=>{e.preventDefault()}}>
                     <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                         Apple Iphone 13, LTE , Aluminium Case, Starlight Sport
                     </h5>
@@ -76,6 +79,8 @@ export default function Card() {
                     </a>
                 </div>
             </div>
+            <div className="p-4">
+            <ThemeBtn/></div>
         </div>
     );
 }

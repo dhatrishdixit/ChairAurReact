@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blurry{
+    background-color: rgba(227, 238, 236, 0.332);
+   
+}

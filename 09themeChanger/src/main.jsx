@@ -5,7 +5,7 @@ import { ThemeContext } from './context/theme.js'
 import App from './App'
 
 const AppWrapper = () => {
-  const [themeMode,setThemeMode] = React.useState('dark') ; 
+  const [themeMode,setThemeMode] = React.useState('light') ; 
   React.useEffect(() => {  
     
     const html = document.querySelector('html');
